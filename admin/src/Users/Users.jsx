@@ -8,6 +8,7 @@ function Users(props) {
     const fetchData = async () => {
       const response = await UserAPI.getAllData();
       console.log(response);
+      console.log("Hello");
 
       setUsers(response);
     };
