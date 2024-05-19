@@ -6,7 +6,7 @@ import convertMoney from "../convertMoney";
 import "./Checkout.css";
 
 import io from "socket.io-client";
-const socket = io("http://localhost:5000");
+// const socket = io("http://localhost:5000");
 
 function Checkout(props) {
   const [carts, setCarts] = useState([]);
@@ -153,7 +153,7 @@ function Checkout(props) {
       const data = localStorage.getItem("id_user");
 
       // Gửi socket lên server
-      socket.emit("send_order", data);
+      // socket.emit("send_order", data);
 
       //Dùng setTimeout delay 3s
       //Sau 4s nó sẽ thực hiện
